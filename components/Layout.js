@@ -6,9 +6,7 @@ export default function Layout({ children }) {
     <>
       <Header />
       <main className="min-vh-100">
-        <div className="container-fluid">
-          {children}
-        </div>
+        {children}
       </main>
       <Footer />
     </>
