@@ -1,4 +1,5 @@
 import SEO from "@/components/SEO";
+import Hero from "@/components/Home/Hero";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
         title="Accueil"
         description="Bienvenue sur mon portfolio"
       />
-      <h1>Accueil</h1>
+      <Hero />
     </>
   );
 }
