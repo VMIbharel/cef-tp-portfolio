@@ -4,11 +4,13 @@
   margin: 0;
 }
 
-/* Override Bootstrap default font to Nunito Sans */
+/* CSS Variables */
 :root {
   --bs-body-font-family: "Nunito Sans", sans-serif;
   --bs-body-font-weight: 400;
   --bs-heading-font-weight: 600;
+  --transition-duration: 0.3s;
+  --transition-timing: ease;
 }
 
 html,
@@ -52,6 +54,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Navigation links uppercase */
+.nav-link {
+  text-transform: uppercase;
 }
 
 /* Button transitions */
