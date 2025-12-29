@@ -3,3 +3,66 @@
   padding: 0;
   margin: 0;
 }
+
+/* Override Bootstrap default font to Nunito Sans */
+:root {
+  --bs-body-font-family: "Nunito Sans", sans-serif;
+  --bs-body-font-weight: 400;
+  --bs-heading-font-weight: 600;
+}
+
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/* Global transitions for interactive elements */
+a,
+button,
+input,
+textarea,
+select,
+[role="button"] {
+  transition: all 0.3s ease;
+}
+
+/* Card hover effects */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: #efefef;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Link hover effect */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button transitions */
+button,
+.btn {
+  transition: all 0.3s ease;
+}
+
+/* Form elements transitions */
+input:focus,
+textarea:focus,
+select:focus {
+  transition: all 0.3s ease;
+}
