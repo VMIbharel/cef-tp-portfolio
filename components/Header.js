@@ -9,10 +9,11 @@ export default function Header() {
   };
 
   const navItems = [
-    { label: "Accueil", href: "/" },
+    { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
-    { label: "Réalisations", href: "/realisations" },
+    { label: "Portfolio", href: "/portfolio" },
     { label: "Contact", href: "/contact" },
+    { label: "Mentions Légales", href: "/mentions-legales" },
   ];
 
   return (
