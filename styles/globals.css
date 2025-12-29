@@ -66,3 +66,12 @@ textarea:focus,
 select:focus {
   transition: all 0.3s ease;
 }
+
+/* Footer styles */
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+

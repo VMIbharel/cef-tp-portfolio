@@ -32,15 +32,15 @@ export default function Footer() {
 
 
   return (
-    <footer className="bg-light py-5 mt-5">
-      <div className="container-fluid">
+    <footer className="bg-dark text-white py-5 mt-5">
+      <div className="container-fluid text-white footer-content">
         <div className="row g-4">
           {/* Column 1: Site Info & Social Links */}
           <div className="col-md-4">
             <h5 className="mb-3">
-              <strong>JOHN DOE</strong>
+              <strong>John Doe</strong>
             </h5>
-            <div className="text-muted">
+            <div className="text-white">
               {infos.map((info) => {
                 let content;
                 if (info.label === "Adresse") {
@@ -48,15 +48,32 @@ export default function Footer() {
                     <a
                       href={`https://maps.google.com/?q=${encodeURIComponent(info.value)}`}
                       target="_blank"
+                      style={{ transition: "all 0.3s ease" }}
+                      onMouseLeave={(e) => {
+                        e.target.style.fontWeight = "normal";
+                        e.target.style.color = "white";
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.fontWeight = "bold";
+                      }}
                       rel="noopener noreferrer"
-                      className="text-muted text-decoration-none"
+                      className="text-white text-decoration-none"
                     >
                       {info.value}
                     </a>
                   );
                 } else if (info.label === "Email") {
                   content = (
-                    <a href={`mailto:${info.value}`} className="text-muted text-decoration-none">
+                    <a href={`mailto:${info.value}`}
+                    className="text-white text-decoration-none"
+                    style={{ transition: "all 0.3s ease" }}
+                    onMouseLeave={(e) => {
+                      e.target.style.fontWeight = "normal";
+                      e.target.style.color = "white";
+                    }}
+                    onMouseEnter={(e) => {
+                      e.target.style.fontWeight = "bold";
+                    }}>
                       {info.value}
                     </a>
                   );
@@ -77,11 +94,10 @@ export default function Footer() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="text-muted"
                   title={social.label}
-                  style={{ fontSize: "1.5rem", transition: "color 0.3s ease" }}
-                  onMouseEnter={(e) => (e.target.style.color = "white")}
-                  onMouseLeave={(e) => (e.target.style.color = "")}
+                  style={{ fontSize: "1.5rem", transition: "color 0.3s ease", color: "#495057" }}
+                  onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+                  onMouseLeave={(e) => (e.target.style.color = "#495057")}
                 >
                   <i className={`bi bi-${social.icon}`}></i>
                 </a>
@@ -97,15 +113,14 @@ export default function Footer() {
                 <li key={link.href} className="mb-2">
                   <Link
                     href={link.href}
-                    className="text-muted text-decoration-none"
+                    className="text-white text-decoration-none"
                     style={{ transition: "all 0.3s ease" }}
                     onMouseEnter={(e) => {
                       e.target.style.fontWeight = "bold";
-                      e.target.style.color = "#000";
                     }}
                     onMouseLeave={(e) => {
                       e.target.style.fontWeight = "normal";
-                      e.target.style.color = "";
+                      e.target.style.color = "white";
                     }}
                   >
                     {link.label}
@@ -120,7 +135,7 @@ export default function Footer() {
             <h5 className="mb-3">Dernières Réalisations</h5>
             <ul className="list-unstyled">
               {portfolioLinks.map((project) => (
-                <li key={project.href} className="mb-2 text-muted">
+                <li key={project.href} className="mb-2 text-white">
                   {project.label}
                 </li>
               ))}
