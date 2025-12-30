@@ -118,9 +118,33 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* GitHub Modal Styles */
+
+
+.github-modal-header {
+  border-bottom: 1px solid #444;
+}
+
+.github-modal-body {
+  padding: 2rem;
+}
+
+.github-modal-footer {
+  border-top: 1px solid #444;
+}
+
+/* GitHub Modal Info Items Separator */
+.github-info-item {
+  border-bottom: 1px solid #444 !important;
+}
+
 /* Responsive Design */
 @media (max-width: 576px) {
   .about-skills-section {
     padding: 1rem 0;
+  }
+
+  .github-modal-body {
+    padding: 1.5rem;
   }
 }
