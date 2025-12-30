@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 
-export default function Hero() {
+export default function Hero({ onOpenGitHubModal }) {
   return (
     <section
       className="hero-section"
@@ -21,9 +20,13 @@ export default function Hero() {
           <h2 className="hero-tagline">
             Développeur web full stack
           </h2>
-          <Link href="#about" className="btn btn-danger btn-lg hero-cta">
+          <button
+            onClick={onOpenGitHubModal}
+            className="btn btn-danger btn-lg hero-cta"
+            aria-label="En savoir plus - Ouvrir le profil GitHub"
+          >
             En savoir plus
-          </Link>
+          </button>
         </div>
       </div>
     </section>
