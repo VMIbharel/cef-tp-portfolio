@@ -42,7 +42,7 @@ export default function Skills() {
         {skills.map((skill) => (
           <div key={skill.id} className="skill-item mb-4">
             <div className="d-flex justify-content-between align-items-center mb-2">
-              <label htmlFor={`skill-${skill.id}`} className="skill-label">
+              <label id={`skill-label-${skill.id}`} className="skill-label">
                 {skill.name}
               </label>
               <span className="skill-percentage">{skill.percentage}%</span>
@@ -50,13 +50,12 @@ export default function Skills() {
             <div
               className="progress"
               role="progressbar"
+              aria-labelledby={`skill-label-${skill.id}`}
               aria-valuenow={skill.percentage}
               aria-valuemin={0}
               aria-valuemax={100}
-              aria-label={`${skill.name}: ${skill.percentage}%`}
             >
               <div
-                id={`skill-${skill.id}`}
                 className={`progress-bar bg-${skill.color}`}
                 style={{ width: `${skill.percentage}%` }}
               ></div>
