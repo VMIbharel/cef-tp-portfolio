@@ -83,3 +83,44 @@
     font-size: 0.9rem;
   }
 }
+
+/* Section Title Styles */
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem !important;
+  font-weight: 600;
+  color: #333;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #0056b3, #007bff);
+  border-radius: 2px;
+}
+
+.text-center.section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* About & Skills Wrapper Section */
+.about-skills-section {
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .about-skills-section {
+    padding: 1rem 0;
+  }
+}
