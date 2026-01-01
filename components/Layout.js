@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <main className="min-vh-100">
+      <main>
         {children}
       </main>
       <Footer />

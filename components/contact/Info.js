@@ -26,9 +26,7 @@ export default function ContactInfo() {
             return (
               <div key={contact.label} className="contact-info-item mb-2">
                 <i className="bi bi-telephone me-2"></i>
-                <a href={`tel:${contact.value}`} className="text-dark text-decoration-none">
                   {contact.value}
-                </a>
               </div>
             );
           } else if (contact.label === "email") {

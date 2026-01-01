@@ -8,9 +8,9 @@ export const siteConfig = {
 
   // Contact Information
   contact: [
-    { label: "email", value: "john.doe@gmail.com" },
-    { label: "phone", value: "10 20 30 40 50" },
     { label: "address", value: "40 rue Laure Diebold, 69009 Lyon, France" },
+    { label: "phone", value: "10 20 30 40 50" },
+    { label: "email", value: "john.doe@gmail.com" },
   ],
 
   // Social Media URLs
@@ -35,5 +35,6 @@ export const siteConfig = {
     { label: "Services", href: "/services" },
     { label: "Réalisations", href: "/portfolio" },
     { label: "Contact", href: "/contact" },
+    { label: "Mentions Légales", href: "/legal" },
   ],
 };
