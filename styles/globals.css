@@ -62,6 +62,10 @@ a:hover {
   text-transform: uppercase;
 }
 
+.nav-link:hover {
+  text-decoration: underline;
+}
+
 /* Button transitions */
 button,
 .btn {

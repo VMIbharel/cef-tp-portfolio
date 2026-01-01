@@ -180,6 +180,11 @@
   transform: scale(1.05);
 }
 
+.project-card .btn:hover {
+  background-color: #007bff;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
 /* Contact Info Styles */
 .contact-info-item {
   display: flex;

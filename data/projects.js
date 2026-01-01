@@ -5,7 +5,7 @@ export const projects = [
     title: "Fresh Food",
     description: "Site de vente de produits frais en ligne",
     comment: "Site réalisé avec PHP et MySQL",
-    link: "#",
+    link: "/portfolio",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const projects = [
     title: "Restaurant Akira",
     description: "Site de restaurant avec menu interactif",
     comment: "Site réalisé avec WordPress",
-    link: "#",
+    link: "/portfolio",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const projects = [
     title: "Espace bien-être",
     description: "Plateforme de vente de produits de bien-être",
     comment: "Site réalisé avec Laravel",
-    link: "#",
+    link: "/portfolio",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const projects = [
     title: "SEO - E-commerce",
     description: "Amélioration du référencement d'un site e-commerce",
     comment: "Utilisation des outils SEO",
-    link: "#",
+    link: "/portfolio",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const projects = [
     title: "Création d'une API REST",
     description: "API RESTful publique pour gestion de données avec authentification OAuth, pagination et documentation Swagger.",
     comment: "PHP - Symfony",
-    link: "#",
+    link: "/portfolio",
   },
   {
     id: 6,
@@ -45,6 +45,6 @@ export const projects = [
     title: "Maquette d'un site web",
     description: "Création du prototype d'un site",
     comment: "Réalisation avec Figma",
-    link: "#",
+    link: "/portfolio",
   },
 ];
