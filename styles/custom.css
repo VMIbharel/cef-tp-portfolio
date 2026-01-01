@@ -175,6 +175,8 @@
 }
 
 .project-card:hover .btn {
+  background-color: #00a2ff;
+  border-color: #00a2ff;
   transform: scale(1.05);
 }
 
