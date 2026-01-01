@@ -160,6 +160,24 @@
   color: #1a47b8;
 }
 
+/* Project Card Styles */
+.project-card {
+  transition: all var(--transition-duration) var(--transition-timing);
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.project-card:hover {
+  background-color: #efefef;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.project-card:hover .btn {
+  transform: scale(1.05);
+}
+
 /* Responsive Design */
 @media (max-width: 576px) {
   .about-skills-section {
@@ -174,4 +192,7 @@
     margin-bottom: 1rem;
   }
 
+  .project-card {
+    margin-bottom: 1rem;
+  }
 }
