@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { navItems } from "@/data/navItems";
 
 export default function Header() {
   const router = useRouter();
@@ -7,14 +8,6 @@ export default function Header() {
   const isActive = (href) => {
     return router.pathname === href;
   };
-
-  const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "Portfolio", href: "/portfolio" },
-    { label: "Contact", href: "/contact" },
-    { label: "Mentions Légales", href: "/mentions-legales" },
-  ];
 
   return (
     <header>

@@ -1,36 +1,10 @@
 import Link from "next/link";
+import { navItems } from "@/data/navItems";
+import { projects } from "@/data/projects";
+import { socialLinks } from "@/data/socialLinks";
+import { infos } from "@/data/infos";
 
 export default function Footer() {
-  const infos = [
-    { label: "Adresse", value: "40 rue Laure Diebold 69009 Lyon Cedex" },
-    { label: "Téléphone", value: "10 20 30 40 50" },
-    { label: "Email", value: "john.doe@gmail.com" },
-  ];
-  
-  const socialLinks = [
-    { icon: "github", url: "https://github.com/john-doe", label: "GitHub" },
-    { icon: "twitter", url: "https://twitter.com/john-doe", label: "Twitter" },
-    { icon: "linkedin", url: "https://linkedin.com/in/john-doe", label: "LinkedIn" },
-  ];
-
-  const quickLinks = [
-    { label: "Accueil", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "Réalisations", href: "/realisations" },
-    { label: "Contact", href: "/contact" },
-    { label: "Mentions Légales", href: "/mentions-legales" },
-  ];
-
-  const portfolioLinks = [
-    { label: "Fresh Food", href: "/realisations/projet-1" },
-    { label: "Restaurant Akira", href: "/realisations/projet-2" },
-    { label: "Espace bien-être", href: "/realisations/projet-3" },
-    { label: "SEO", href: "/realisations/projet-4" },
-    { label: "Création d'une API", href: "/realisations/projet-5" },
-    { label: "Maquette d'un site", href: "/realisations/projet-6" },
-  ];
-
-
   return (
     <footer className="bg-dark text-white py-5 mt-5">
       <div className="container-fluid text-white footer-content">
@@ -109,7 +83,7 @@ export default function Footer() {
           <div className="col-md-4">
             <h5 className="mb-3">Liens Rapides</h5>
             <ul className="list-unstyled">
-              {quickLinks.map((link) => (
+              {navItems.map((link) => (
                 <li key={link.href} className="mb-2">
                   <Link
                     href={link.href}
@@ -134,9 +108,9 @@ export default function Footer() {
           <div className="col-md-4">
             <h5 className="mb-3">Dernières Réalisations</h5>
             <ul className="list-unstyled">
-              {portfolioLinks.map((project) => (
-                <li key={project.href} className="mb-2 text-white">
-                  {project.label}
+              {projects.map((project) => (
+                <li key={project.link} className="mb-2 text-white">
+                  {project.title}
                 </li>
               ))}
             </ul>
