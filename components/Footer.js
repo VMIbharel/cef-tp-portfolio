@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { navItems } from "@/data/navItems";
 import { projects } from "@/data/projects";
-import { socialLinks } from "@/data/socialLinks";
-import { infos } from "@/data/infos";
+import { siteConfig } from "@/data/siteConfig";
 
 export default function Footer() {
+
+
   return (
     <footer className="bg-dark text-white py-5 mt-5">
       <div className="container-fluid text-white footer-content">
@@ -15,12 +15,12 @@ export default function Footer() {
               <strong>John Doe</strong>
             </h5>
             <div className="text-white">
-              {infos.map((info) => {
+              {siteConfig.contact.map((contact) => {
                 let content;
-                if (info.label === "Adresse") {
+                if (contact.label === "address") {
                   content = (
                     <a
-                      href={`https://maps.google.com/?q=${encodeURIComponent(info.value)}`}
+                      href={`https://maps.google.com/?q=${encodeURIComponent(contact.value)}`}
                       target="_blank"
                       style={{ transition: "all 0.3s ease" }}
                       onMouseLeave={(e) => {
@@ -33,12 +33,12 @@ export default function Footer() {
                       rel="noopener noreferrer"
                       className="text-white text-decoration-none"
                     >
-                      {info.value}
+                      {contact.value}
                     </a>
                   );
-                } else if (info.label === "Email") {
+                } else if (contact.label === "email") {
                   content = (
-                    <a href={`mailto:${info.value}`}
+                    <a href={`mailto:${contact.value}`}
                     className="text-white text-decoration-none"
                     style={{ transition: "all 0.3s ease" }}
                     onMouseLeave={(e) => {
@@ -48,21 +48,21 @@ export default function Footer() {
                     onMouseEnter={(e) => {
                       e.target.style.fontWeight = "bold";
                     }}>
-                      {info.value}
+                      {contact.value}
                     </a>
                   );
                 } else {
-                  content = info.value;
+                  content = contact.value;
                 }
                 return (
-                  <p key={info.label} className="mb-2">
+                  <p key={contact.label} className="mb-2">
                     {content}
                   </p>
                 );
               })}
             </div>
             <div className="d-flex gap-3 mt-4">
-              {socialLinks.map((social) => (
+              {siteConfig.socialLinks.map((social) => (
                 <a
                   key={social.icon}
                   href={social.url}
@@ -83,7 +83,7 @@ export default function Footer() {
           <div className="col-md-4">
             <h5 className="mb-3">Liens Rapides</h5>
             <ul className="list-unstyled">
-              {navItems.map((link) => (
+              {siteConfig.navigation.map((link) => (
                 <li key={link.href} className="mb-2">
                   <Link
                     href={link.href}

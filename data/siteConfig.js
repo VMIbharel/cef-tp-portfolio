@@ -7,19 +7,18 @@ export const siteConfig = {
   language: "fr",
 
   // Contact Information
-  contact: {
-    email: "john.doe@gmail.com",
-    phone: "10 20 30 40 50",
-    address: "40 rue Laure Diebold 69009 Lyon Cedex",
-    addressForMap: "40 rue Laure Diebold, 69009 Lyon, France",
-  },
+  contact: [
+    { label: "email", value: "john.doe@gmail.com" },
+    { label: "phone", value: "10 20 30 40 50" },
+    { label: "address", value: "40 rue Laure Diebold, 69009 Lyon, France" },
+  ],
 
   // Social Media URLs
-  social: {
-    github: "https://github.com/john-doe",
-    twitter: "https://twitter.com/john-doe",
-    linkedin: "https://linkedin.com/in/john-doe",
-  },
+  socialLinks: [
+    { icon: "github", url: "https://github.com/john-doe", label: "GitHub" },
+    { icon: "twitter", url: "https://twitter.com/john-doe", label: "Twitter" },
+    { icon: "linkedin", url: "https://linkedin.com/in/john-doe", label: "LinkedIn" },
+  ],
 
   // SEO Default Values
   seo: {
@@ -34,7 +33,7 @@ export const siteConfig = {
   navigation: [
     { label: "Accueil", href: "/" },
     { label: "Services", href: "/services" },
-    { label: "Réalisations", href: "/realisations" },
+    { label: "Réalisations", href: "/portfolio" },
     { label: "Contact", href: "/contact" },
   ],
 };

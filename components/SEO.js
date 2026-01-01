@@ -37,9 +37,9 @@ export default function SEO({
       addressCountry: "FR",
     },
     sameAs: [
-      siteConfig.social.github,
-      siteConfig.social.twitter,
-      siteConfig.social.linkedin,
+      siteConfig.socialLinks.github,
+      siteConfig.socialLinks.twitter,
+      siteConfig.socialLinks.linkedin,
     ],
     jobTitle: "Développeur Web & Designer",
   };

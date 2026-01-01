@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { navItems } from "@/data/navItems";
+import { siteConfig } from "@/data/siteConfig";
 
 export default function Header() {
   const router = useRouter();
@@ -34,7 +34,7 @@ export default function Header() {
           {/* Navigation items */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
-              {navItems.map((item) => (
+              {siteConfig.navigation.map((item) => (
                 <li key={item.href} className="nav-item">
                   <Link
                     href={item.href}
