@@ -26,7 +26,6 @@ export default function ProjectCard({
         {link && (
           <a
             href={link}
-            target="_blank"
             rel="noopener noreferrer nofollow"
             className="btn btn-primary"
           >

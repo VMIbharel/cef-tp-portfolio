@@ -110,7 +110,11 @@ export default function Footer() {
             <ul className="list-unstyled">
               {projects.map((project) => (
                 <li key={project.link} className="mb-2 text-white">
-                  {project.title}
+                  <a href={project.link}
+                  rel="noopener noreferrer nofollow"
+                  className="text-white text-decoration-none">
+                    {project.title}
+                  </a>
                 </li>
               ))}
             </ul>
