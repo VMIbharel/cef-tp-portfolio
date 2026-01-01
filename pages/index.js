@@ -1,8 +1,8 @@
 import { useState } from "react";
 import SEO from "@/components/SEO";
-import Hero from "@/components/Home/Hero";
-import About from "@/components/Home/About";
-import Skills from "@/components/Home/Skills";
+import Hero from "@/components/home/Hero";
+import About from "@/components/home/About";
+import Skills from "@/components/home/Skills";
 import GitHubModal from "@/components/GitHubModal";
 
 export default function Home() {

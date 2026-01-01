@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SEO from "@/components/SEO";
-import ServiceCard from "@/components/Service/Card";
+import ServiceCard from "@/components/service/Card";
 import { services } from "@/data/services";
 
 export default function Services() {
