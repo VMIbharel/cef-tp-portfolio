@@ -178,6 +178,20 @@
   transform: scale(1.05);
 }
 
+/* Contact Info Styles */
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+.contact-form-info-section {
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive Design */
 @media (max-width: 576px) {
   .about-skills-section {
@@ -194,5 +208,9 @@
 
   .project-card {
     margin-bottom: 1rem;
+  }
+
+  .contact-form-info-section {
+    padding: 1rem 0;
   }
 }
