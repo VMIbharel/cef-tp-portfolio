@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import Image from "next/image";
+import { useState, useEffect } from 'react';
 
 export default function GitHubModal({ isOpen, onClose }) {
   const [githubData, setGithubData] = useState(null);
@@ -88,11 +87,11 @@ export default function GitHubModal({ isOpen, onClose }) {
                 <div className="row g-4 align-items-md-start">
                   {/* Avatar column */}
                   <div className="col-12 col-md-4 text-center">
-                    <Image
+                    <img
                       src={githubData.avatar_url}
                       alt={`Avatar de ${githubData.name || githubData.login}`}
-                      width={180}
-                      height={180}
+                      style={{ width: '180px', height: '180px', borderRadius: '50%' }}
+                      className="img-fluid"
                     />
                   </div>
 

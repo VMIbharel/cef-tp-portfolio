@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero({ onOpenGitHubModal }) {
   return (
     <section
@@ -7,12 +5,10 @@ export default function Hero({ onOpenGitHubModal }) {
       aria-label="Section héroïque - Présentation principale"
     >
       <div className="hero-container">
-        <Image
+        <img
           src="/images/hero-bg.jpg"
           alt="Bannière de présentation - Portfolio John Doe"
-          fill
           className="hero-image"
-          priority
         />
         <div className="hero-overlay"></div>
         <div className="hero-content">

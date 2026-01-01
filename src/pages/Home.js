@@ -1,9 +1,9 @@
-import { useState } from "react";
-import SEO from "@/components/SEO";
-import Hero from "@/components/home/Hero";
-import About from "@/components/home/About";
-import Skills from "@/components/home/Skills";
-import GitHubModal from "@/components/GitHubModal";
+import { useState } from 'react';
+import SEO from '../components/SEO';
+import Hero from '../components/home/Hero';
+import About from '../components/home/About';
+import Skills from '../components/home/Skills';
+import GitHubModal from '../components/GitHubModal';
 
 export default function Home() {
   const [isGitHubModalOpen, setIsGitHubModalOpen] = useState(false);

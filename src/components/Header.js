@@ -1,12 +1,12 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { siteConfig } from "@/data/siteConfig";
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { siteConfig } from '../data/siteConfig';
 
 export default function Header() {
-  const router = useRouter();
+  const location = useLocation();
 
-  const isActive = (href) => {
-    return router.pathname === href;
+  const isActive = (path) => {
+    return location.pathname === path;
   };
 
   return (
@@ -14,7 +14,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           {/* Logo */}
-          <Link href="/" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <strong>JOHN DOE</strong>
           </Link>
 
@@ -37,7 +37,7 @@ export default function Header() {
               {siteConfig.navigation.map((item) => (
                 <li key={item.href} className="nav-item">
                   <Link
-                    href={item.href}
+                    to={item.href}
                     className={`nav-link ${
                       isActive(item.href)
                         ? "active fw-bold text-decoration-underline"

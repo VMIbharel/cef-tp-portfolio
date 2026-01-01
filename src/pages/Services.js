@@ -1,7 +1,6 @@
-import Image from "next/image";
-import SEO from "@/components/SEO";
-import ServiceCard from "@/components/service/Card";
-import { services } from "@/data/services";
+import SEO from '../components/SEO';
+import ServiceCard from '../components/service/Card';
+import { services } from '../data/services';
 
 export default function Services() {
   return (
@@ -13,14 +12,10 @@ export default function Services() {
 
       {/* Banner */}
       <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 4", overflow: "hidden" }}>
-        <Image
+        <img
           src="/images/banner.jpg"
           alt="Bannière Services"
-          fill
-          sizes="100vw"
-          quality={100}
-          priority
-          style={{ objectFit: "cover", objectPosition: "center" }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
         />
       </div>
 

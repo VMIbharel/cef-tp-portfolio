@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function About() {
   return (
     <div>
@@ -8,13 +6,11 @@ export default function About() {
 
       <div className="row align-items-center g-4">
         {/* Image */}
-        <Image
+        <img
           src="/images/john-doe-about.jpg"
           alt="John Doe - Développeur web"
-          width={400}
-          height={400}
           className="img-fluid rounded"
-          priority={false}
+          style={{ maxWidth: '400px', height: 'auto' }}
         />
 
         {/* Text */}

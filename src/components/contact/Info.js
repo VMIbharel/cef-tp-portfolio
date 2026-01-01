@@ -1,4 +1,4 @@
-import { siteConfig } from "@/data/siteConfig";
+import { siteConfig } from '../../data/siteConfig';
 
 export default function ContactInfo() {
   return (

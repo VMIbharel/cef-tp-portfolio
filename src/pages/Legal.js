@@ -1,5 +1,5 @@
-import SEO from "@/components/SEO";
-import ContactInfo from "@/components/contact/Info";
+import SEO from '../components/SEO';
+import ContactInfo from '../components/contact/Info';
 
 export default function Services() {
   return (

@@ -1,7 +1,7 @@
-import SEO from '@/components/SEO';
-import ContactForm from '@/components/contact/Form';
-import ContactInfo from '@/components/contact/Info';
-import { siteConfig } from '@/data/siteConfig';
+import SEO from '../components/SEO';
+import ContactForm from '../components/contact/Form';
+import ContactInfo from '../components/contact/Info';
+import { siteConfig } from '../data/siteConfig';
 
 export default function Contact() {
   const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.1234567890!2d4.8!3d45.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c3d0d0d0d0d1%3A0x0!2s${encodeURIComponent(siteConfig.contact.addressForMap)}!5e0!3m2!1sfr!2sfr!4v1234567890`;

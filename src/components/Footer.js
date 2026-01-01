@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { projects } from "@/data/projects";
-import { siteConfig } from "@/data/siteConfig";
+import { Link } from 'react-router-dom';
+import { projects } from '../data/projects';
+import { siteConfig } from '../data/siteConfig';
 
 export default function Footer() {
 
@@ -86,7 +86,7 @@ export default function Footer() {
               {siteConfig.navigation.map((link) => (
                 <li key={link.href} className="mb-2">
                   <Link
-                    href={link.href}
+                    to={link.href}
                     className="text-white text-decoration-none"
                     style={{ transition: "all 0.3s ease" }}
                     onMouseEnter={(e) => {

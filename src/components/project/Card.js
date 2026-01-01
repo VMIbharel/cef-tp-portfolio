@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function ProjectCard({
   image,
   title,
@@ -10,12 +8,11 @@ export default function ProjectCard({
   return (
     <div className="card h-100 project-card">
       <div className="position-relative overflow-hidden" style={{ height: '200px' }}>
-        <Image
+        <img
           src={image}
           alt={title}
-          fill
           className="card-img-top"
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
       </div>
 
